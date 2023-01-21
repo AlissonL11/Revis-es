@@ -1,0 +1,93 @@
+body {
+    background-color: #B2C7DF;
+    margin: 0px;
+}
+
+header {
+    background-color: rgba(27, 26, 94, 0.72);
+    display: grid;
+    grid-auto-flow: column;    
+}
+
+.logo {
+    padding-left: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;    
+}
+
+.title {
+    padding-top: 4rem;
+    padding-right: 5rem;
+    color: white;  
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;   
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+#sec-form {
+    display: grid;
+    grid-auto-flow: column;    
+}
+
+form {
+    display: grid;
+    grid-auto-flow: row;
+    max-width: 500px;
+}
+
+label {
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+input {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.57);
+    height: 54px;
+    font-family: 'Alegreya Sans SC';
+    
+}
+
+.submit-button {
+
+    background: #1B1A5E;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Anaheim';
+
+    width: 244px;
+    height: 52px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+th {
+    width: 102px;
+    height: 31px;
+    left: 19px;
+    top: 23px;
+
+    background: rgba(64, 123, 255, 0.55);
+    border: 1px solid #767373;
+
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 34px;
+    color: #000000;
+    
+}
+
+td {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.57);
+    border: 1px solid #767373;
+}

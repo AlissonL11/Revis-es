@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Aluno</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    
+    <script>
+        
+        function pegaresultado(){
+            
+            const url = new URLSearchParams(windows.location.search)
+            let media = url.get("media")
+            document.getElementById("resultado").value = media
+
+            if(media >=6){
+                document.getElementById("statusAluno").innerHTML = "APROVADO"
+                document.getElementById("statusAluno").style.color = "green"
+            } else{
+                document.getElementById("statusAluno").innerHTML = "REPROVADO"
+                document.getElementById("statusAluno").style.color = "red"
+            }
+        }
+
+        
+
+    </script>
+
+</head>
+<body onload="pegaresultado()">
+    <h1>Painel do Aluno<img src="assets/images/lapis.png" alt="Lápis"></h1>
+
+    <section class="formulario">
+        <p>A Média do aluno é:</p>
+        <input type="number" id="resultado" placeholder="Média">
+        <p>Portanto está <span id="statusAluno"></span>!</p>
+        <a href="=index.html">Voltar</a>
+           
+    
+    </section>
+    
+    
+</body>
+</html>

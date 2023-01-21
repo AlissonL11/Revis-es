@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./logo.png" alt="logo do Pet Shop">
+        <h1 class="title">AGENDAMENTO DE BANHO E TOSA</h1>
+    </header>
+
+    <section id="sec-form">
+            <div id="form">
+                <form onsubmit="addPet()">
+                    <label for="petName">Nome do Pet *</label>
+                    <input type="text" autocomplete="off" required id="fName" name="petName">
+
+                    <label for="petBreed">Raça *</label>
+                    <input type="text" autocomplete="off" required id="fBreed" name="petBreed">
+
+                    <label for="petOwner">Dono do Pet *</label>
+                    <input type="text" autocomplete="off" required id="fOwner" name="petOwner">
+
+                    <label for="petPhone">Telefone *</label>
+                    <input style ="margin-bottom: 1rem" type="text" autocomplete="off" required id="fPhone" name="petPhone">
+
+                    <button class="submit-button" type="submit">Agendar Pet</button>
+                </form>
+            </div>
+
+            <div>
+                <table id="dataTable">
+                    <tr>
+                        <th> ID</th>
+                        <th> Nome do Pet</th>
+                        <th> Raça</th>
+                        <th> Dono do PET</th>
+                        <th> Telefone</th>
+                        <th> Remover</th>
+                    </tr>
+                </table>
+
+            </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>
